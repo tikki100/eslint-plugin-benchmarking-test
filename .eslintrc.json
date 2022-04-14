@@ -1,0 +1,62 @@
+{
+    "root": true,
+    "ignorePatterns": [
+        "**/lib/**/*",
+        "**/node_modules/**/*",
+        "!.husky",
+        "!*.json"
+    ],
+    "env": {
+        "node": true,
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
+        "plugin:comment-length/recommended",
+        "plugin:react/recommended"
+    ],
+    
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "import",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "spaced-comment": "warn",
+        "import/no-unresolved": "off",
+        "import/namespace": "off",
+        "import/no-relative-packages": "error",
+        "import/order": [
+          "error",
+          {
+            "alphabetize": {
+              "order": "asc"
+            },
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              "parent",
+              "sibling",
+              "index"
+            ],
+            "pathGroupsExcludedImportTypes": [
+              "builtin"
+            ],
+            "newlines-between": "always"
+          }
+        ]
+    }
+}
