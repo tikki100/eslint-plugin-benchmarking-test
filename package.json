@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-benchmarking-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This projects attempts to introduce vulnerabilities that can be caught by different static analysers and provides a repository for the oSSF benchmarking tool.",
   "main": "./lib/app.js",
   "files": [
