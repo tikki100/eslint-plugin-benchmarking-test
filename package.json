@@ -9,7 +9,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "./src/no-sql-injections/mysql/CVE-custom-00001"
+      "./src/**"
     ]
   },
   "repository": {

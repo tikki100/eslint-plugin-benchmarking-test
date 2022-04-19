@@ -5,6 +5,7 @@
       "DOM.Iterable",
       "esnext"
     ],
+    "allowJs": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
